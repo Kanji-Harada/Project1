@@ -28,8 +28,8 @@ if __name__ == '__main__':
         test_measure = []
         for encode_method in encode_methods:
             infile_path = "../data/result_%s/%s/%s" % (species, machine_method, encode_method)
-            infile1 = infile_path + '/' + infile_name[0]  # val
-            infile2 = infile_path + '/' + infile_name[1]  # test
+            infile1 = infile_path + '/' + infile_name[0]  # val aaaaa
+            infile2 = infile_path + '/' + infile_name[1]  # test bbbbb
 
             val_measure.append((pd.read_csv(infile1, index_col=0).iloc[-1].values.tolist()))  # means
             test_measure.append((pd.read_csv(infile2, index_col=0).iloc[-1].values.tolist()))  # means
